@@ -18,21 +18,24 @@
                         新增產品
                     </div>
                     <div class="card-body">
-                        <div class="form-group mb-2">
-                            <label for="title">產品標題</label>
-                            <input id="title" type="text" class="form-control" placeholder="請輸入產品標題">
-                        </div>
-                        <div class="row mb-2">
-                            <div class="form-group col-md-6">
-                                <label for="origin_price">原價</label>
-                                <input id="origin_price" type="number" min="0" class="form-control" placeholder="請輸入原價">
+                        <form class="addProductForm">
+                            <div class="form-group mb-2">
+                                <label for="title">產品標題</label>
+                                <input id="title" type="text" class="form-control" placeholder="請輸入產品標題">
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="price">售價</label>
-                                <input id="price" v-model="tempProduct.price" min="0" type="number" class="form-control"
-                                    placeholder="請輸入售價">
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label for="origin_price">原價</label>
+                                    <input id="origin_price" type="number" min="0" class="form-control"
+                                        placeholder="請輸入原價">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="price">售價</label>
+                                    <input id="price" v-model="tempProduct.price" min="0" type="number"
+                                        class="form-control" placeholder="請輸入售價">
+                                </div>
                             </div>
-                        </div>
+                        </form>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary align-self-end" id="addProduct">
                                 建立
